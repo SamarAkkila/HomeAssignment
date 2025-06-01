@@ -29,11 +29,11 @@ struct RecipeDetailView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
 
-                    Text(recipe.name ?? "")
+                    Text(recipe.name)
                         .font(.title2.bold())
                         .padding(.leading, 10)
 
-                    Text("Cuisine: \(recipe.cuisine ?? "")")
+                    Text("Cuisine: \(recipe.cuisine)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .padding(.leading, 10)

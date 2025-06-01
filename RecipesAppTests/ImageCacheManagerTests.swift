@@ -12,7 +12,7 @@ final class ImageCacheManagerTests: XCTestCase{
     
     func testSaveAndLoadImage() {
           guard let image = UIImage(systemName: "heart.fill"),
-                let imageData = image.pngData() else {
+                let _ = image.pngData() else {
               XCTFail("Could not create image")
               return
           }
